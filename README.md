@@ -38,10 +38,10 @@ Here are some ideas to get you started:
 
 ### :zap: Github Stats
 
-[![Github stats](https://github-readme-stats.vercel.app/api?username=phamquangvinhfpt&count_private=true&show_icons=true&hide=issues)](https://github.com/anuraghazra/github-readme-stats)
+[![Github stats](https://github-readme-stats.vercel.app/api?username=phamquangvinhfpt)](https://github.com/phamquangvinhfpt/github-readme-stats)
 
 ![](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=phamquangvinhfpt&theme=default)
-![](https://github-readme-stats.vercel.app/api/top-langs?username=phamquangvinhfpt&show_icons=true&locale=en&layout=compact)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=phamquangvinhfpt&layout=compact)
 
 <p>
   <a href="https://count.getloli.com/"><img src="https://count.getloli.com/get/@phamquangvinh?theme=gelbooru" alt="Moe Counter" title="Moe Counter"></a>
