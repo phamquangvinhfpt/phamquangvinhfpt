@@ -43,4 +43,6 @@ Here are some ideas to get you started:
 ![](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=phamquangvinhfpt&theme=default)
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=phamquangvinhfpt&layout=compact)
 
-![](https://ani-testlab.edu.vn/get/@phamquangvinhfpt?theme=gelbooru)
+<p>
+  <a href="https://ani-testlab.edu.vn/"><img src="https://ani-testlab.edu.vn/get/@phamquangvinh?theme=gelbooru" alt="Moe Counter" title="Moe Counter"></a>
+</p>
