@@ -43,5 +43,8 @@ Here are some ideas to get you started:
 ![](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=phamquangvinhfpt&theme=default)
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=phamquangvinhfpt&layout=compact)
 
-<a href="http://ani-testlab.edu.vn" target="_blank"><img src="http://ani-testlab.edu.vn/get/@phamquangvinh" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://ani-testlab.edu.vn/get/@phamquangvinh?theme=rule34">
+  <source media="(prefers-color-scheme: light)" srcset="https://ani-testlab.edu.vn/get/@phamquangvinh?theme=gelbooru">
+  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="https://ani-testlab.edu.vn/get/@phamquangvinh?theme=gelbooru">
+</picture>
