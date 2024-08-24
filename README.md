@@ -44,5 +44,5 @@ Here are some ideas to get you started:
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=phamquangvinhfpt&layout=compact)
 
 <p>
-  <a href="https://ani-testlab.edu.vn/"><img src="https://ani-testlab.edu.vn/get/@phamquangvinh?theme=gelbooru" alt="Moe Counter" title="Moe Counter"></a>
+  <a href="https://ani-testlab.edu.vn/"><img src="[https://ani-testlab.edu.vn/get/@phamquangvinh?theme=gelbooru](https://ani-testlab.edu.vn/get/@phamquangvinhfpt?theme=rule34)" alt="Moe Counter" title="Moe Counter"></a>
 </p>
