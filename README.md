@@ -43,6 +43,5 @@ Here are some ideas to get you started:
 ![](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=phamquangvinhfpt&theme=default)
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=phamquangvinhfpt&layout=compact)
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
-" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
+<a href="http://ani-testlab.edu.vn" target="_blank"><img src="http://ani-testlab.edu.vn/get/@phamquangvinh" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
