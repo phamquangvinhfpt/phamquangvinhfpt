@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pham Quang Vinh - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        secondary: {
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            200: '#ddd6fe',
+                            300: '#c4b5fd',
+                            400: '#a78bfa',
+                            500: '#8b5cf6',
+                            600: '#7c3aed',
+                            700: '#6d28d9',
+                            800: '#5b21b6',
+                            900: '#4c1d95',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .animate-bounce-slow {
+            animation: bounce 3s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(-5%);
+                animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+            }
+            50% {
+                transform: translateY(0);
+                animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+    <!-- Header -->
+    <header class="bg-primary-600 text-white">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">Pham Quang Vinh</div>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#about" class="hover:text-primary-200 transition">About</a>
+                <a href="#skills" class="hover:text-primary-200 transition">Skills</a>
+                <a href="#projects" class="hover:text-primary-200 transition">Projects</a>
+                <a href="#capstone" class="hover:text-primary-200 transition">Capstone</a>
+                <a href="#contact" class="hover:text-primary-200 transition">Contact</a>
+                <button id="darkModeToggle" class="hover:text-primary-200 transition">
+                    <i class="fa-solid fa-moon dark:hidden"></i>
+                    <i class="fa-solid fa-sun hidden dark:inline"></i>
+                </button>
+            </div>
+            <div class="md:hidden">
+                <button id="mobileMenuButton" class="focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden px-6 py-4 bg-primary-700">
+            <div class="flex flex-col space-y-4">
+                <a href="#about" class="hover:text-primary-200 transition">About</a>
+                <a href="#skills" class="hover:text-primary-200 transition">Skills</a>
+                <a href="#projects" class="hover:text-primary-200 transition">Projects</a>
+                <a href="#capstone" class="hover:text-primary-200 transition">Capstone</a>
+                <a href="#contact" class="hover:text-primary-200 transition">Contact</a>
+                <button id="darkModeToggleMobile" class="hover:text-primary-200 transition text-left">
+                    <i class="fa-solid fa-moon dark:hidden"></i>
+                    <i class="fa-solid fa-sun hidden dark:inline"></i>
+                    Dark Mode
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-b from-primary-600 to-primary-700 text-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 flex flex-col items-start">
+                <h1 class="text-5xl font-bold mb-6">Hi there, I'm Vinh 👋</h1>
+                <p class="text-xl mb-8">A software developer passionate about building applications and constantly learning new technologies.</p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-white text-primary-600 px-6 py-3 rounded-full font-medium hover:bg-primary-50 transition">Get in Touch</a>
+                    <a href="#projects" class="border-2 border-white px-6 py-3 rounded-full font-medium hover:bg-white hover:text-primary-600 transition">View Projects</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center">
+                <img src="https://scontent.fsgn2-4.fna.fbcdn.net/v/t39.30808-6/475554961_1332958154572354_493181148654519774_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFpYnO0paOag9uOye3KLwvbGQNrNxRL7YgZA2s3FEvtiDdicdcYKO5eIov17mhUciyqqXH33f-GiuamD28In-cK&_nc_ohc=6jqqqa2X_ewQ7kNvwF6maAv&_nc_oc=AdmVZy-5AHxTcyS7XGFJ_NSI0OeudQu5ikhhbDWYVg2CUdcd2Awi0xwVaMDoOJeNxSk&_nc_zt=23&_nc_ht=scontent.fsgn2-4.fna&_nc_gid=znc4roZrhFaXaGxWfTGlkw&oh=00_AYF1uqIh6kFo-fbTtO-JirXeEK_zGwB2mXjSYxJ3mr_nrA&oe=67F4AA93" alt="Profile Avatar" class="w-48 h-48 object-cover rounded-full border-4 border-white shadow-lg animate-bounce-slow">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">About Me</h2>
+            <div class="flex flex-col md:flex-row gap-10">
+                <div class="md:w-1/2">
+                    <p class="text-lg mb-6">I'm a software developer with a passion for building applications that solve real-world problems. My journey in technology has equipped me with a versatile skill set, allowing me to work across different platforms and technologies.</p>
+                    <p class="text-lg mb-6">When I'm not coding, you can find me exploring the latest tech trends or working on personal projects that challenge and expand my abilities.</p>
+                    <p class="text-lg">I believe in continuous learning and staying adaptable in the rapidly evolving tech landscape.</p>
+                </div>
+                <div class="md:w-1/2 flex justify-center items-center">
+                    <div class="grid grid-cols-2 gap-6 text-center">
+                        <div class="p-6 bg-gray-50 dark:bg-gray-700 rounded-lg shadow-md">
+                            <i class="fa-solid fa-code text-4xl text-primary-500 mb-4"></i>
+                            <h3 class="text-xl font-semibold mb-2">Software Development</h3>
+                            <p>Building robust and scalable applications</p>
+                        </div>
+                        <div class="p-6 bg-gray-50 dark:bg-gray-700 rounded-lg shadow-md">
+                            <i class="fa-solid fa-database text-4xl text-primary-500 mb-4"></i>
+                            <h3 class="text-xl font-semibold mb-2">Database Design</h3>
+                            <p>Creating efficient data structures</p>
+                        </div>
+                        <div class="p-6 bg-gray-50 dark:bg-gray-700 rounded-lg shadow-md">
+                            <i class="fa-solid fa-server text-4xl text-primary-500 mb-4"></i>
+                            <h3 class="text-xl font-semibold mb-2">Backend Development</h3>
+                            <p>Building robust APIs and services</p>
+                        </div>
+                        <div class="p-6 bg-gray-50 dark:bg-gray-700 rounded-lg shadow-md">
+                            <i class="fa-solid fa-laptop-code text-4xl text-primary-500 mb-4"></i>
+                            <h3 class="text-xl font-semibold mb-2">Frontend Development</h3>
+                            <p>Creating intuitive user interfaces</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Skills & Technologies</h2>
+            
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold mb-6 text-center">Languages</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <div class="px-6 py-3 bg-white dark:bg-gray-800 rounded-full shadow-md flex items-center">
+                        <i class="fa-brands fa-java text-orange-500 mr-2"></i>
+                        <span>Java</span>
+                    </div>
+                    <div class="px-6 py-3 bg-white dark:bg-gray-800 rounded-full shadow-md flex items-center">
+                        <i class="fa-brands fa-microsoft text-green-600 mr-2"></i>
+                        <span>C#</span>
+                    </div>
+                    <div class="px-6 py-3 bg-white dark:bg-gray-800 rounded-full shadow-md flex items-center">
+                        <i class="fa-solid fa-code text-blue-500 mr-2"></i>
+                        <span>Go</span>
+                    </div>
+                    <div class="px-6 py-3 bg-white dark:bg-gray-800 rounded-full shadow-md flex items-center">
+                        <i class="fa-brands fa-vuejs text-green-500 mr-2"></i>
+                        <span>Vue.js</span>
+                    </div>
+                    <div class="px-6 py-3 bg-white dark:bg-gray-800 rounded-full shadow-md flex items-center">
+                        <i class="fa-brands fa-html5 text-orange-600 mr-2"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="px-6 py-3 bg-white dark:bg-gray-800 rounded-full shadow-md flex items-center">
+                        <i class="fa-brands fa-js text-yellow-400 mr-2"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="px-6 py-3 bg-white dark:bg-gray-800 rounded-full shadow-md flex items-center">
+                        <i class="fa-brands fa-css3-alt text-blue-500 mr-2"></i>
+                        <span>CSS3</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold mb-6 text-center">Tools & Frameworks</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <div class="px-6 py-3 bg-white dark:bg-gray-800 rounded-full shadow-md flex items-center">
+                        <i class="fa-brands fa-git-alt text-orange-600 mr-2"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="px-6 py-3 bg-white dark:bg-gray-800 rounded-full shadow-md flex items-center">
+                        <i class="fa-brands fa-node-js text-green-600 mr-2"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="px-6 py-3 bg-white dark:bg-gray-800 rounded-full shadow-md flex items-center">
+                        <i class="fa-solid fa-ship text-blue-500 mr-2"></i>
+                        <span>Portainer</span>
+                    </div>
+                    <div class="px-6 py-3 bg-white dark:bg-gray-800 rounded-full shadow-md flex items-center">
+                        <i class="fa-solid fa-database text-blue-700 mr-2"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="px-6 py-3 bg-white dark:bg-gray-800 rounded-full shadow-md flex items-center">
+                        <i class="fa-solid fa-server text-red-600 mr-2"></i>
+                        <span>Redis</span>
+                    </div>
+                    <div class="px-6 py-3 bg-white dark:bg-gray-800 rounded-full shadow-md flex items-center">
+                        <i class="fa-solid fa-leaf text-green-500 mr-2"></i>
+                        <span>Spring</span>
+                    </div>
+                    <div class="px-6 py-3 bg-white dark:bg-gray-800 rounded-full shadow-md flex items-center">
+                        <i class="fa-brands fa-docker text-blue-500 mr-2"></i>
+                        <span>Docker</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-2xl font-semibold mb-6 text-center">Platform & Tools</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <div class="px-6 py-3 bg-white dark:bg-gray-800 rounded-full shadow-md flex items-center">
+                        <i class="fa-brands fa-windows text-blue-500 mr-2"></i>
+                        <span>Windows</span>
+                    </div>
+                    <div class="px-6 py-3 bg-white dark:bg-gray-800 rounded-full shadow-md flex items-center">
+                        <i class="fa-solid fa-code text-purple-600 mr-2"></i>
+                        <span>Visual Studio</span>
+                    </div>
+                    <div class="px-6 py-3 bg-white dark:bg-gray-800 rounded-full shadow-md flex items-center">
+                        <i class="fa-brands fa-microsoft text-blue-500 mr-2"></i>
+                        <span>VS Code</span>
+                    </div>
+                    <div class="px-6 py-3 bg-white dark:bg-gray-800 rounded-full shadow-md flex items-center">
+                        <i class="fa-brands fa-github text-gray-900 dark:text-white mr-2"></i>
+                        <span>GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Featured Projects</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="relative bg-gray-50 dark:bg-gray-700 rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105">
+                    <div class="h-48 bg-primary-600 flex items-center justify-center">
+                        <i class="fa-solid fa-graduation-cap text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">CourseraXpress</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Tool to automate Coursera course completion</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 text-sm rounded-full">JavaScript</span>
+                            <span class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 text-sm rounded-full">Automation</span>
+                            <span class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 text-sm rounded-full">Web Scraping</span>
+                        </div>
+                        <a href="https://github.com/phamquangvinhfpt/coursera-xpress" class="absolute bottom-[30px] inline-block bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition">View Project</a>
+                    </div>
+                </div>
+                
+                <div class="relative bg-gray-50 dark:bg-gray-700 rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105">
+                    <div class="h-48 bg-primary-600 flex items-center justify-center">
+                        <i class="fa-solid fa-tooth text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">DrDentistAPI</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">A RESTful API for dental clinic management system</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 text-sm rounded-full">.NET</span>
+                            <span class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 text-sm rounded-full">PostgreSQL</span>
+                            <span class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 text-sm rounded-full">RESTful API</span>
+                        </div>
+                        <a href="https://github.com/phamquangvinhfpt/dr-dentist-api" class="absolute bottom-[30px] inline-block bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition">View Project</a>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 dark:bg-gray-700 rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105">
+                    <div class="h-48 bg-primary-600 flex items-center justify-center">
+                        <i class="fa-solid fa-teeth text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">DrDentist.me</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">A web application for dental clinic management with Vuestic UI</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 text-sm rounded-full">Vue.js</span>
+                            <span class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 text-sm rounded-full">Vuestic UI</span>
+                            <span class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 text-sm rounded-full">Web App</span>
+                        </div>
+                        <a href="https://github.com/phamquangvinhfpt/dr-dentist-vuestic" class="inline-block bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capstone Project Section -->
+    <section id="capstone" class="py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Capstone Project: DrDentist</h2>
+
+            <div class="flex flex-col md:flex-row gap-10 mb-16">
+                <div class="md:w-1/2">
+                    <img src="https://raw.githubusercontent.com/phamquangvinhfpt/dr-dentist-vuestic/refs/heads/main/public/Screenshot.png" alt="DrDentist Preview" class="rounded-xl shadow-lg w-full h-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4">Dental Clinic Management System</h3>
+                    <p class="text-lg mb-6">
+                        DrDentist is a comprehensive dental clinic management system built with a .NET API backend and Vue.js frontend. It's designed to streamline dental clinic operations, improving efficiency and patient care.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 text-sm rounded-full">.NET 7</span>
+                        <span class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 text-sm rounded-full">Vue.js 3</span>
+                        <span class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 text-sm rounded-full">PostgreSQL</span>
+                        <span class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 text-sm rounded-full">Redis</span>
+                        <span class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 text-sm rounded-full">Docker</span>
+                        <span class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 text-sm rounded-full">TypeScript</span>
+                        <span class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 text-sm rounded-full">Tailwind CSS</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="https://drdentist.me" target="_blank" class="inline-block bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition">Live Demo</a>
+                        <a href="https://api.drdentist.me/swagger/index.html" target="_blank" class="inline-block border border-primary-600 text-primary-600 dark:text-primary-400 px-4 py-2 rounded-lg hover:bg-primary-600 hover:text-white transition">API Docs</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fa-solid fa-server text-primary-500 mr-3"></i>
+                        Backend Features
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Multi-tenant architecture</strong> - Support for multiple dental clinics</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Role-based access control</strong> - Different permissions for admin, staff, doctors, and patients</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Appointment management</strong> - Schedule, reschedule, and cancel appointments</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Patient medical records</strong> - Store and retrieve patient information and treatment history</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Treatment plans</strong> - Create and manage dental treatment plans</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Payment processing</strong> - Handle payments and generate invoices</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Real-time notifications</strong> - Using SignalR for instant updates</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Background processing</strong> - Using Hangfire for scheduled tasks</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fa-solid fa-laptop-code text-primary-500 mr-3"></i>
+                        Frontend Features
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Dashboard</strong> - Overview of clinic operations, statistics, and performance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Appointment Management</strong> - Schedule, reschedule, and track appointments</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Patient Management</strong> - Patient profiles, history, and medical records</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Examination Tools</strong> - Digital tools for dental examinations and diagnoses</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Reports & Analytics</strong> - Generate insights from clinic data</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Payment Processing</strong> - Handle payments and generate invoices</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Mobile Experience</strong> - Access via Android mobile app using Capacitor</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Dark/Light Themes</strong> - Customizable UI appearance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Internationalization</strong> - Support for multiple languages</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Real-time Notifications</strong> - Using SignalR for instant updates</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-16 bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md">
+                <h3 class="text-2xl font-bold mb-6 flex items-center">
+                    <i class="fa-solid fa-code-branch text-primary-500 mr-3"></i>
+                    Technical Architecture
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4">Backend Architecture</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-dot text-primary-500 mt-1 mr-3 text-sm"></i>
+                                <span><strong>Clean Architecture</strong> with Domain, Application, and Infrastructure layers</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-dot text-primary-500 mt-1 mr-3 text-sm"></i>
+                                <span><strong>PostgreSQL</strong> for primary database storage</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-dot text-primary-500 mt-1 mr-3 text-sm"></i>
+                                <span><strong>Redis</strong> for distributed caching and SignalR backplane</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-dot text-primary-500 mt-1 mr-3 text-sm"></i>
+                                <span><strong>Docker</strong> for containerization and deployment</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-dot text-primary-500 mt-1 mr-3 text-sm"></i>
+                                <span><strong>RESTful API</strong> endpoints for client communication</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-dot text-primary-500 mt-1 mr-3 text-sm"></i>
+                                <span><strong>Hangfire</strong> for background job processing</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4">Frontend Architecture</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-dot text-primary-500 mt-1 mr-3 text-sm"></i>
+                                <span><strong>Vue.js 3</strong> with Composition API</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-dot text-primary-500 mt-1 mr-3 text-sm"></i>
+                                <span><strong>TypeScript</strong> for type safety and better developer experience</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-dot text-primary-500 mt-1 mr-3 text-sm"></i>
+                                <span><strong>Pinia</strong> for state management</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-dot text-primary-500 mt-1 mr-3 text-sm"></i>
+                                <span><strong>Vuestic UI</strong> for UI components</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-dot text-primary-500 mt-1 mr-3 text-sm"></i>
+                                <span><strong>Tailwind CSS</strong> for styling</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-dot text-primary-500 mt-1 mr-3 text-sm"></i>
+                                <span><strong>Capacitor</strong> for mobile app conversion</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Stats Section -->
+    <section class="py-20 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">GitHub Stats</h2>
+            
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                    <img src="https://github-readme-stats.vercel.app/api?username=phamquangvinhfpt&show_icons=true&theme=radical" alt="GitHub Stats" class="w-full h-auto">
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=phamquangvinhfpt&layout=compact&theme=radical" alt="Top Languages" class="w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Get In Touch</h2>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white dark:bg-gray-800 p-10 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-semibold mb-8 text-center">Contact Information</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="flex items-start p-4 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg transition">
+                            <div class="bg-primary-100 dark:bg-primary-900 p-4 rounded-full mr-5">
+                                <i class="fa-solid fa-envelope text-xl text-primary-600 dark:text-primary-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-lg mb-1">Email</h4>
+                                <a href="mailto:vinhpqse160633@fpt.edu.vn" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400">vinhpqse160633@fpt.edu.vn</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start p-4 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg transition">
+                            <div class="bg-primary-100 dark:bg-primary-900 p-4 rounded-full mr-5">
+                                <i class="fa-brands fa-facebook text-xl text-primary-600 dark:text-primary-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-lg mb-1">Facebook</h4>
+                                <a href="https://www.facebook.com/PhamQuangVinh2002/" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400">Pham Quang Vinh</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start p-4 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg transition">
+                            <div class="bg-primary-100 dark:bg-primary-900 p-4 rounded-full mr-5">
+                                <i class="fa-brands fa-linkedin text-xl text-primary-600 dark:text-primary-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-lg mb-1">LinkedIn</h4>
+                                <a href="https://www.linkedin.com/" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400">Pham Quang Vinh</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start p-4 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg transition">
+                            <div class="bg-primary-100 dark:bg-primary-900 p-4 rounded-full mr-5">
+                                <i class="fa-brands fa-github text-xl text-primary-600 dark:text-primary-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-lg mb-1">GitHub</h4>
+                                <a href="https://github.com/phamquangvinhfpt" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400">phamquangvinhfpt</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-600 text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold">Pham Quang Vinh</h2>
+                    <p class="mt-2">Software Developer</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="https://github.com/phamquangvinhfpt" target="_blank" class="text-white hover:text-primary-200 transition">
+                        <i class="fa-brands fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" class="text-white hover:text-primary-200 transition">
+                        <i class="fa-brands fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="https://www.facebook.com/PhamQuangVinh2002/" target="_blank" class="text-white hover:text-primary-200 transition">
+                        <i class="fa-brands fa-facebook text-2xl"></i>
+                    </a>
+                    <a href="mailto:vinhpqse160633@fpt.edu.vn" class="text-white hover:text-primary-200 transition">
+                        <i class="fa-solid fa-envelope text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-primary-500 mt-8 pt-8 text-center">
+                <p>&copy; 2025 Pham Quang Vinh. All rights reserved.</p>
+                <div class="mt-4">
+                    <img src="https://komarev.com/ghpvc/?username=phamquangvinhfpt&color=blueviolet&style=flat-square" alt="Profile views" class="inline-block">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobileMenuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Dark mode toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const darkModeToggleMobile = document.getElementById('darkModeToggleMobile');
+        
+        // Check for saved theme preference or default to user preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+
+        // Toggle theme function
+        function toggleTheme() {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.theme = 'light';
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        }
+
+        darkModeToggle.addEventListener('click', toggleTheme);
+        darkModeToggleMobile.addEventListener('click', toggleTheme);
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
