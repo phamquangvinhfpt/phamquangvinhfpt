@@ -1,4 +1,4 @@
-# Hi there, I'm Pham Quang Vinh 👋
+# Hi there, I'm Vinh 👋
 
 ![profile banner](https://user-images.githubusercontent.com/10679055/128811821-2c8b1822-602b-46d9-884b-20c9d65f649d.gif)
 
