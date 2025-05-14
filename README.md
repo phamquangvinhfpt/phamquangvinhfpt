@@ -54,9 +54,9 @@ I'm a software developer passionate about building applications and constantly l
 <div align="center">
   
 [![Facebook](https://img.shields.io/badge/PhamQuangVinh2002-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/PhamQuangVinh2002/)
-[![Email](https://img.shields.io/badge/-vinhpqse160633@fpt.edu.vn-911318?style=for-the-badge&logo=Mail.RU&logoColor=white)](mailto:vinhpqse160633@fpt.edu.vn)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
-[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/)
+[![Email](https://img.shields.io/badge/-vinhpqse160633@fpt.edu.vn-911318?style=for-the-badge&logo=Mail.RU&logoColor=white)](mailto:vinhpq.official@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/phamquangvinhs)
+[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discordapp.com/users/697054466352087050)
 
 </div>
 
