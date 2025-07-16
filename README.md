@@ -62,7 +62,7 @@ I'm a software developer passionate about building applications and constantly l
 
 <div align="center">
   <p>
-    <a href="https://count.getloli.com/"><img src="https://count.getloli.com/get/@nguyenvancaoky?theme=gelbooru" alt="Moe Counter" title="Moe Counter"></a>
+    <a href="https://count.getloli.com/"><img src="https://count.getloli.com/get/@phamquangvinh?theme=gelbooru" alt="Moe Counter" title="Moe Counter"></a>
   </p>
 </div>
 
